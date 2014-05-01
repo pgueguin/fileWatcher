@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<instance>
+    <inbound>
+        <source>
+            <pattern>.*\.xml</pattern>
+            <directory>inbound</directory>
+        </source>
+    </inbound>
+    <outbound>
+        <destination>
+            <pattern>.*</pattern>
+            <directory>outbound/sys1</directory>
+        </destination>
+        <destination>
+            <pattern></pattern>
+            <directory>outbound/sys2</directory>
+        </destination>
+        <destination>
+            <pattern></pattern>
+            <directory>outbound/sys3</directory>
+        </destination>
+    </outbound>
+</instance>
