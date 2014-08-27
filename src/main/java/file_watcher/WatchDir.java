@@ -166,7 +166,7 @@ public class WatchDir {
                 // print out event
                 logger.info("New event :"+event.kind().name()+": "+child);
                 if(child.getParent().toString().equals("config")){
-                    if(child.toString().equals("config/config.xml")){
+                    if(child.toString().equals("config"+File.separator+"config.xml")){
                         logger.info("Reloading configuration");
                         this.config_changed = true;
                     }
